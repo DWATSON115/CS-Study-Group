@@ -1,0 +1,11 @@
+Dynamic Memory
+    Pre-processor directives
+        #include <stdlib.h>
+
+    malloc(size_t size)
+        int *array = (int *)malloc(n * sizeof(int));
+        free(array);
+
+    calloc(size_t num, size_t size)
+        int *array = (int *)calloc(n, sizeof(int));
+        free(array);

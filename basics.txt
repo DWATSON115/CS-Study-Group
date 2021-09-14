@@ -1,0 +1,114 @@
+C Basics
+    Variable Declaration
+        int a;
+        char c;
+        float f;
+        double d;
+
+    Scan Format
+        scanf("%d", &a);
+        scanf("%c", &c);
+        scanf("%f", &f);
+        scanf("%lf", &d);
+
+    Assignment
+        a = 1;
+        c = 'A';
+        f = 0.1;
+        d = 0.1;
+
+    Arithmetic
+        a = b + c;
+        a = b - c;
+        a = b * c;
+        a = b / c;    
+
+    Modulus
+        r = a % b;
+
+    Comparison
+        ==  // equal to
+        >=  // great than or equal to
+        <=  // less than or equal to
+        !=  // not equal to
+
+    Boolean Logic
+        && and
+        || or
+
+    Incrementing/Decrementing
+        a++;    // equivalent to a = a + 1;
+        a--;    // equivalent to a = a - 1;
+        a += 2  // equivalent to a = a + 2;
+        a -= 2  // equivalent to a = a - 2;
+
+    If/Else Statements (Using Comparison and Boolean Logic)
+        if (a == b) {
+            printf("Do something.\n");
+        }
+        else {
+            printf("Do something else.\n");
+        }
+    
+    Switch Statements (Alternative to If/Else)
+        switch(a) {
+            case 1:
+                printf("Do something.\n");
+                break;
+            case 2:
+                printf("Do something.\n");
+                break;
+            case 3:
+                printf("Do something.\n");
+                break;
+            default:
+                printf("Do something.\n");
+                break;
+        }
+
+    For Loops
+        Single Loops
+            for (int i = 0; i < n; i++) {
+                printf("Do something.\n");
+            }
+        Nested Loops
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < m; j++) {
+                    printf("Do something.\n");
+                }
+            }
+    Functions
+        void Function1(parameter);   // doesn't return anything
+        int Function2(parameter);    // returns an int
+        char Function3(parameter);   // returns a char
+
+Strings
+    Pre-processor Directives
+        #include <string.h>
+
+    String Declaration
+        char str[10];
+            Strings in C are character arrays. They are terminated by '\0'.
+        
+    Scan Format
+        scanf("%s", str);
+            Reads in chars until white space is encountered. Places a null
+            terminator after the last character.
+
+    Print Format
+        printf("%s", str);
+            Prints chars until function encounters null terminator.
+
+    String Functions
+        strlen(str);
+            Returns an int of the length of str.
+
+        strcat(destinationStr, sourceStr);
+            Concatenates sourceString to the end of destination string.
+            Make sure there is enough space in the array. 
+
+        strcpy(destinationStr, sourceStr);  
+            Copies sourceStr into destinationStr.
+
+        strcmp(str1, str2);
+            Compares two strings lexicographically.
