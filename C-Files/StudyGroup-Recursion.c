@@ -30,6 +30,26 @@ int main(void) {
     //     }
     // }
     // What is this function similar to, in structure?
+
+    // 4) The  function  below  is  an  attempt  at  a  recursive  binary
+    // search  ofa  sorted  array.  Why  is  this function no faster than a
+    // basic linear search through the array?
+    // int search(int numbers[], int low, int high, int value) {
+    //     if (low > high) return 0; // Not found.
+    //     int mid = (low+high)/2;
+    //     if (numbers[mid] == value) return 1; // Found.
+    //     return search(numbers, low, mid-1) ||
+    //            search(numbers, mid+1, high);
+    // }
+
+    // 5) Imagine being a particle starting at the coordinates (x1, y1) in the
+    // Cartesian plane, moving to (x2, y2), where x1 ≤x2 and y1≤y2, and at each
+    // step you could either add 1 to your x coordinate or add 1 to your y
+    // coordinate. Write a recursive function to calculate the number of
+    // different ways to make the journey. (No need to code a base case for when
+    // it's not possible, ie when x1 > x2 or y1 > y2.)
+    // int numWays(int x1, int y1, int x2, int y2);
+    
     return 0;
 }
 
